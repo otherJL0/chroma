@@ -3,69 +3,69 @@ package styles
 import "github.com/alecthomas/chroma/v2"
 
 var (
-	ctpFlamingo = "#F2CDCD"
-	ctpPink     = "#F5C2E7"
-	ctpMauve    = "#CBA6F7"
-	ctpRed      = "#F38BA8"
-	ctpMaroon   = "#EBA0AC"
-	ctpPeach    = "#FAB387"
-	ctpYellow   = "#F9E2AF"
-	ctpGreen    = "#A6E3A1"
-	ctpTeal     = "#94E2D5"
-	ctpSky      = "#89DCEB"
-	ctpBlue     = "#87B0F9"
-	ctpLavender = "#B4BEFE"
-	ctpText     = "#C6D0F5"
-	ctpOverlay0 = "#696D86"
-	ctpSurface2 = "#565970"
-	ctpSurface0 = "#313244"
-	ctpBase     = "#1E1E2E"
+	mochaFlamingo = "#F2CDCD"
+	mochaPink     = "#F5C2E7"
+	mochaMauve    = "#CBA6F7"
+	mochaRed      = "#F38BA8"
+	mochaMaroon   = "#EBA0AC"
+	mochaPeach    = "#FAB387"
+	mochaYellow   = "#F9E2AF"
+	mochaGreen    = "#A6E3A1"
+	mochaTeal     = "#94E2D5"
+	mochaSky      = "#89DCEB"
+	mochaBlue     = "#87B0F9"
+	mochaLavender = "#B4BEFE"
+	mochaText     = "#C6D0F5"
+	mochaOverlay0 = "#696D86"
+	mochaSurface2 = "#565970"
+	mochaSurface0 = "#313244"
+	mochaBase     = "#1E1E2E"
 )
 
 // Catppuccin a soothing pastel theme for the high-spirited (mocha variant)
-var Catppuccin = Register(chroma.MustNewStyle("catppuccin", chroma.StyleEntries{
-	chroma.TextWhitespace:        ctpSurface0,
-	chroma.Comment:               "italic " + ctpSurface2,
-	chroma.CommentPreproc:        ctpBlue,
-	chroma.Keyword:               ctpMauve,
-	chroma.KeywordPseudo:         "bold " + ctpMauve,
-	chroma.KeywordType:           ctpFlamingo,
-	chroma.KeywordConstant:       "italic " + ctpMauve,
-	chroma.Operator:              ctpSky,
-	chroma.OperatorWord:          "bold " + ctpSky,
-	chroma.Name:                  ctpLavender,
-	chroma.NameBuiltin:           "italic " + ctpText,
-	chroma.NameFunction:          ctpSky,
-	chroma.NameClass:             ctpYellow,
-	chroma.NameNamespace:         ctpYellow,
-	chroma.NameException:         ctpMaroon,
-	chroma.NameVariable:          ctpPeach,
-	chroma.NameConstant:          ctpYellow,
-	chroma.NameLabel:             ctpYellow,
-	chroma.NameEntity:            ctpPink,
-	chroma.NameAttribute:         ctpYellow,
-	chroma.NameTag:               ctpMauve,
-	chroma.NameDecorator:         ctpPink,
-	chroma.NameOther:             ctpPeach,
-	chroma.Punctuation:           ctpText,
-	chroma.LiteralString:         ctpGreen,
-	chroma.LiteralStringDoc:      ctpGreen,
-	chroma.LiteralStringInterpol: ctpGreen,
-	chroma.LiteralStringEscape:   ctpBlue,
-	chroma.LiteralStringRegex:    ctpBlue,
-	chroma.LiteralStringSymbol:   ctpGreen,
-	chroma.LiteralStringOther:    ctpGreen,
-	chroma.LiteralNumber:         ctpTeal,
-	chroma.GenericHeading:        "bold " + ctpSky,
-	chroma.GenericSubheading:     "bold " + ctpSky,
-	chroma.GenericDeleted:        ctpMaroon,
-	chroma.GenericInserted:       ctpGreen,
-	chroma.GenericError:          ctpMaroon,
+var CatppuccinMocha = Register(chroma.MustNewStyle("catppuccin-mocha", chroma.StyleEntries{
+	chroma.TextWhitespace:        mochaSurface0,
+	chroma.Comment:               "italic " + mochaSurface2,
+	chroma.CommentPreproc:        mochaBlue,
+	chroma.Keyword:               mochaMauve,
+	chroma.KeywordPseudo:         "bold " + mochaMauve,
+	chroma.KeywordType:           mochaFlamingo,
+	chroma.KeywordConstant:       "italic " + mochaMauve,
+	chroma.Operator:              mochaSky,
+	chroma.OperatorWord:          "bold " + mochaSky,
+	chroma.Name:                  mochaLavender,
+	chroma.NameBuiltin:           "italic " + mochaText,
+	chroma.NameFunction:          mochaSky,
+	chroma.NameClass:             mochaYellow,
+	chroma.NameNamespace:         mochaYellow,
+	chroma.NameException:         mochaMaroon,
+	chroma.NameVariable:          mochaPeach,
+	chroma.NameConstant:          mochaYellow,
+	chroma.NameLabel:             mochaYellow,
+	chroma.NameEntity:            mochaPink,
+	chroma.NameAttribute:         mochaYellow,
+	chroma.NameTag:               mochaMauve,
+	chroma.NameDecorator:         mochaPink,
+	chroma.NameOther:             mochaPeach,
+	chroma.Punctuation:           mochaText,
+	chroma.LiteralString:         mochaGreen,
+	chroma.LiteralStringDoc:      mochaGreen,
+	chroma.LiteralStringInterpol: mochaGreen,
+	chroma.LiteralStringEscape:   mochaBlue,
+	chroma.LiteralStringRegex:    mochaBlue,
+	chroma.LiteralStringSymbol:   mochaGreen,
+	chroma.LiteralStringOther:    mochaGreen,
+	chroma.LiteralNumber:         mochaTeal,
+	chroma.GenericHeading:        "bold " + mochaSky,
+	chroma.GenericSubheading:     "bold " + mochaSky,
+	chroma.GenericDeleted:        mochaMaroon,
+	chroma.GenericInserted:       mochaGreen,
+	chroma.GenericError:          mochaMaroon,
 	chroma.GenericEmph:           "italic",
 	chroma.GenericStrong:         "bold",
-	chroma.GenericPrompt:         "bold " + ctpOverlay0,
-	chroma.GenericOutput:         ctpPeach,
-	chroma.GenericTraceback:      ctpMaroon,
-	chroma.Error:                 ctpRed,
-	chroma.Background:            ctpPeach + " bg:" + ctpBase,
+	chroma.GenericPrompt:         "bold " + mochaOverlay0,
+	chroma.GenericOutput:         mochaPeach,
+	chroma.GenericTraceback:      mochaMaroon,
+	chroma.Error:                 mochaRed,
+	chroma.Background:            mochaPeach + " bg:" + mochaBase,
 }))
